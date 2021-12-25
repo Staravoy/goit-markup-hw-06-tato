@@ -763,12 +763,18 @@ address {
   top: 17px;
   right: 17px;
 
-  width: 11px;
-  height: 11px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background: var(--wait);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
 
   cursor: pointer;
-  border: none;
-  background-image: url("../images/index/close.svg");
+}
+
+.close:hover {
+  fill: var(--hover-color);
 }
 
 .backdrop.is-hidden {
