@@ -364,14 +364,71 @@
         
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <p>
-                    
-                </p>
                 <button class="close" data-modal-close>
                    <svg class="close-img" width=11px height=11px>
                        <use href="./images/icons.svg#icon-close"></use>
                    </svg>
                 </button>
+
+                <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+
+                <form>
+                    
+                    <div class="form-items">
+                        <label for="name">Имя</label>
+                        <input
+                        class="form-items-input"
+                        type="text"
+                        name="name"
+                        id="name">
+                    </div>
+
+                    <div class="form-items">
+                        <label for="tel">Телефон</label>
+                        <input
+                        class="form-items-input"
+                        type="tel"
+                        name="tel"
+                        id="tel">
+                    </div>
+
+                    <div class="form-items">
+                        <label for="email">Почта</label>
+                        <input
+                        class="form-items-input"
+                        type="email"
+                        name="email"
+                        id="email">
+
+                    </div>
+
+                    <div class="form-items">
+                        <label for="commit">Комментарий</label>
+                        <textarea 
+                            name="commit"
+                            id="commit" 
+                            placeholder="Введите текст">
+                        </textarea>
+                    </div>
+                    
+                    <div class="form-checkbox">
+                        <input
+                        type="checkbox"
+                        name="checkbox"
+                        id="checkbox">
+                        <label for="checkbox">
+                            Соглашаюсь с рассылкой и принимаю 
+                        </label>
+
+                        <a href="#" class="contract">Условия договора</a>
+
+                    </div>        
+                </form>
+                <div class="send-button">
+                    <button type="submit" class="form-button">Отправить</button>
+                </div>
+                
+
             </div>
         </div>
     
