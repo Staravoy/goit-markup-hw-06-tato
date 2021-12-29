@@ -812,7 +812,7 @@ textarea {
 }
 
 .form-items-input {
-  width: 100%;
+  padding-left: 30px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -876,4 +876,21 @@ textarea {
 input {
   padding: 0;
   margin: 0;
+}
+
+.icon-form {
+  position: relative;
+}
+
+.form-icon-img {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+
+  transform: translatey(50%);
+
+  display: inline-block;
+
+  width: 12px;
+  height: 12px;
 }
