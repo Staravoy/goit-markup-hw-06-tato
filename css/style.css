@@ -559,7 +559,7 @@ address {
   color: var(--hover-color);
   transition-duration: 250ms;
 }
-
+/* FOOTER - section join */
 .join {
   margin-left: 70px;
 }
@@ -604,6 +604,65 @@ address {
   width: 20px;
   height: 20px;
   fill: var(--wait);
+}
+
+/* FOOTER - section subscribe */
+.subscribe {
+  margin-left: 93px;
+}
+.subscribe-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--wait);
+  margin-bottom: 20px;
+}
+
+.subscribe-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.subscribe-input:focus {
+  background: var(--wait);
+  color: var(--text-color);
+}
+
+.subscribe-button {
+  width: 200px;
+  height: 50px;
+  padding-left: 30px;
+  margin-left: 12px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background: var(--hover-color);
+
+  cursor: pointer;
+}
+
+.subscribe-button-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  text-align: left;
+
+  color: var(--wait);
+}
+
+.subscribe-button-img {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
 }
 
 /* СТОРІНКА PORTFOLIO */
@@ -779,14 +838,6 @@ address {
 .close:hover {
   fill: var(--hover-color);
 }
-/* 
-.close-img {
-  position: absolute;
-  bottom: 50%;
-  right: 50%;
-
-  transform: translateY(50%);
-} */
 
 .backdrop.is-hidden {
   opacity: 0;
