@@ -70,7 +70,6 @@ ul {
 .logo:hover,
 .logo:focus {
   color: var(--hover-color);
-  background-color: var(--wait);
   transition-duration: 250ms;
 }
 
@@ -104,7 +103,6 @@ ul {
 .nav-link:hover,
 .nav-link:focus {
   color: var(--hover-color);
-  background: var(--whait);
   transition-duration: 250ms;
 }
 
@@ -157,14 +155,13 @@ ul {
 .icon-contact:focus {
   color: var(--hover-color);
   fill: var(--hover-color);
-  background: var(--white);
   transition-duration: 250ms;
 }
 
 /* BANER SECTION */
 
 .baner {
-  background-color: var(--background-color);
+  background: var(--background-color);
   text-align: center;
 
   max-width: 1600px;
@@ -198,7 +195,7 @@ ul {
   height: 50px;
 
   font-family: roboto;
-  background-color: var(--hover-color);
+  background: var(--hover-color);
   color: var(--wait);
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -207,9 +204,9 @@ ul {
 }
 
 .baner-button:hover,
-:focus {
-  color: var(--second-color);
+.baner-button:focus {
   transition-duration: 250ms;
+  cursor: pointer;
 }
 
 /* SKILLS SECTION*/
@@ -328,7 +325,7 @@ img {
 /* WE SECTION */
 
 .we {
-  background-color: var(--buttom-color);
+  background: var(--buttom-color);
 }
 
 .we-title {
@@ -407,16 +404,12 @@ img {
   margin-bottom: 42px;
 }
 
-.social-links:hover {
+.social-links:hover,
+.social-links:focus {
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background: var(--hover-color);
-  fill: var(--wait);
-  transition-duration: 250ms;
-}
-
-.social-links:focus {
   fill: var(--wait);
   transition-duration: 250ms;
 }
@@ -496,7 +489,7 @@ img {
 /* FOOTER для всіх сторінок*/
 
 .footer {
-  background-color: var(--background-color);
+  background: var(--background-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -522,7 +515,6 @@ img {
 .footer-logo:hover,
 .footer-logo:focus {
   color: var(--hover-color);
-  background-color: var(--second-color);
   transition-duration: 250ms;
 }
 
@@ -551,11 +543,11 @@ address {
 }
 
 .address-email:hover,
-:focus,
+.address-email:focus,
 .address-tel:hover,
-:focus,
+.address-tel:focus,
 .address-post:hover,
-:focus {
+.address-post:focus {
   color: var(--hover-color);
   transition-duration: 250ms;
 }
@@ -584,18 +576,25 @@ address {
 }
 
 .join-item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  /* background: rgba(255, 255, 255, 0.1); */
+}
+
+.join-link {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
 }
 
-.join-item:hover,
-.join-item:focus {
-  background-color: var(--hover-color);
+.join-link:hover,
+.join-link:focus {
+  background: var(--hover-color);
   cursor: pointer;
   transition-duration: 250ms;
 }
@@ -671,7 +670,7 @@ address {
 
 .buttons-button {
   border: 0;
-  background-color: var(--buttom-color);
+  background: var(--buttom-color);
   border-radius: 4px;
   cursor: pointer;
   font-weight: 500;
@@ -684,8 +683,8 @@ address {
 }
 
 .buttons-button:hover,
-:focus {
-  background-color: var(--hover-color);
+.buttons-button:focus {
+  background: var(--hover-color);
   color: var(--wait);
   transition-duration: 250ms;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
