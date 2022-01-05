@@ -54,6 +54,7 @@ ul {
 }
 
 .logo {
+  padding: 25px 0;
   text-decoration: none;
   font-family: "Raleway";
   font-size: 26px;
@@ -340,7 +341,6 @@ img {
 
 .we-list {
   display: flex;
-  padding-bottom: 94px;
 }
 
 .we-list-item + .we-list-item {
