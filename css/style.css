@@ -55,6 +55,7 @@ ul {
 
 .logo {
   padding: 25px 0;
+
   text-decoration: none;
   font-family: "Raleway";
   font-size: 26px;
@@ -62,6 +63,8 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--text-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-logo-decor {
@@ -71,7 +74,6 @@ ul {
 .logo:hover,
 .logo:focus {
   color: var(--hover-color);
-  transition-duration: 250ms;
 }
 
 .nav {
@@ -99,12 +101,13 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
 .nav-link:focus {
   color: var(--hover-color);
-  transition-duration: 250ms;
 }
 
 .nav-link-active {
@@ -136,6 +139,7 @@ ul {
   display: flex;
   align-items: center;
   padding: 32px 0;
+
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -143,6 +147,9 @@ ul {
   color: var(--second-color);
   letter-spacing: 0.02em;
   fill: var(--second-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-contact {
@@ -156,7 +163,6 @@ ul {
 .icon-contact:focus {
   color: var(--hover-color);
   fill: var(--hover-color);
-  transition-duration: 250ms;
 }
 
 /* BANER SECTION */
@@ -206,7 +212,6 @@ ul {
 
 .baner-button:hover,
 .baner-button:focus {
-  transition-duration: 250ms;
   cursor: pointer;
 }
 
@@ -402,16 +407,14 @@ img {
   border-radius: 50%;
   fill: #afb1b8;
   margin-bottom: 42px;
+
+  transition: background, fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links:hover,
 .social-links:focus {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
   background: var(--hover-color);
   fill: var(--wait);
-  transition-duration: 250ms;
 }
 
 /* CLIENT SECTION */
@@ -441,15 +444,15 @@ img {
   border-radius: 4px;
 
   fill: var(--icon-color);
+
+  transition: border, fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-link:hover,
 .client-link:focus {
-  background: var(--whait);
   fill: var(--hover-color);
   border: 1px solid var(--hover-color);
   cursor: pointer;
-  transition-duration: 250ms;
 }
 
 .client-item + .client-item {
@@ -506,6 +509,8 @@ img {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-logo-decor {
@@ -515,7 +520,6 @@ img {
 .footer-logo:hover,
 .footer-logo:focus {
   color: var(--hover-color);
-  transition-duration: 250ms;
 }
 
 address {
@@ -529,6 +533,8 @@ address {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--wait);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-email,
@@ -540,6 +546,8 @@ address {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-email:hover,
@@ -549,7 +557,6 @@ address {
 .address-post:hover,
 .address-post:focus {
   color: var(--hover-color);
-  transition-duration: 250ms;
 }
 /* FOOTER - section join */
 .join {
@@ -579,7 +586,6 @@ address {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  /* background: rgba(255, 255, 255, 0.1); */
 }
 
 .join-link {
@@ -590,13 +596,13 @@ address {
   height: 100%;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-link:hover,
 .join-link:focus {
   background: var(--hover-color);
   cursor: pointer;
-  transition-duration: 250ms;
 }
 
 .join-img {
@@ -626,11 +632,6 @@ address {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-}
-
-.subscribe-input:focus {
-  background: var(--wait);
-  color: var(--text-color);
 }
 
 .subscribe-button {
@@ -680,13 +681,14 @@ address {
 
   min-width: 73px;
   padding: 6px 22px;
+
+  transition: color, background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .buttons-button:hover,
 .buttons-button:focus {
   background: var(--hover-color);
   color: var(--wait);
-  transition-duration: 250ms;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -714,19 +716,18 @@ address {
   text-decoration: none;
 }
 
-.test::before {
+/* .test::before {
   position: absolute;
   content: "";
   width: 100%;
   height: 100%;
   background: rgba(33, 150, 243, 0.9);
-}
+} */
 
-.exemples-link:hover,
+/* .exemples-link:hover,
 .exemples-link:focus {
   box-sizing: border-box;
-  transition-duration: 250ms;
-}
+} */
 
 .exemple-text {
   padding: 20px 24px;
@@ -759,12 +760,10 @@ address {
 .exemples-hover:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition-duration: 250ms;
 }
 
 .exemples-hover:hover .exemples-product {
   transform: translateY(0);
-  transform: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .exempeles-img {
@@ -832,6 +831,8 @@ address {
   border-radius: 50%;
 
   cursor: pointer;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close:hover {
