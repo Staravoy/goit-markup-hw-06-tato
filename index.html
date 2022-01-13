@@ -360,16 +360,20 @@
                 <div class="subscribe">
                     
                     <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-                    <input type="email" name="user-email" class="subscribe-input" placeholder="E-mail">
-                    
-                    <button href="#" class="subscribe-button">
-                        <p class="subscribe-button-text">Подписаться
-                            <svg class="subscribe-button-img">
-                                <use href="images/icons.svg#icon-telegram"></use>
-                            </svg>
-                        </p>
+                    <form action="#">
+                        <input type="email" name="user-email" class="subscribe-input" placeholder="E-mail">
                         
-                    </button>
+                        <button href="#" class="subscribe-button">
+                        
+                            <p class="subscribe-button-text">Подписаться
+                                <svg class="subscribe-button-img">
+                                    <use href="images/icons.svg#icon-telegram"></use>
+                                </svg>
+                            </p>
+                        
+                        </button>
+                    </form>
+                    
 
                 </div>
             </div>
@@ -433,7 +437,8 @@
 
                     <div class="form-items">
                         <label for="commit">Комментарий</label>
-                        <textarea 
+                        <textarea
+                            class="area-items-input"
                             name="commit"
                             id="commit" 
                             placeholder="Введите текст">
@@ -451,11 +456,13 @@
 
                         <a href="#" class="contract">Условия договора</a>
 
-                    </div>        
+                    </div>
+                    
+                    <div class="send-button">
+                        <button type="submit" class="form-button">Отправить</button>
+                    </div>
+
                 </form>
-                <div class="send-button">
-                    <button type="submit" class="form-button">Отправить</button>
-                </div>
                 
 
             </div>
